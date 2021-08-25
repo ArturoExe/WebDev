@@ -1,2 +1,4 @@
 # WebDev
-Repositorio desarrollo web 
+Repositorio desarrollo web colaborativo
+
+## Dedicado a practicas principiantes de programacion web
