@@ -1,10 +1,11 @@
-
 body {
-    background-color: cadetblue;
+    background-color: #efefef;
     margin: 0;
     font-family: "Muli", sans-serif;
 }
+
 .menu {
+    display: none;
     font-weight: 100;
     background: #efefef;
     width: 150px;
@@ -15,26 +16,24 @@ body {
     -webkit-box-shadow: -3px 0px 5px 0px rgba(0, 0, 0, 0.2);
     box-shadow: -3px 0px 5px 0px rgba(0, 0, 0, 0.2);
     right: -130px;
-    transition: all 0.3s;
-    -webkit-transition: all 0.3s;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
     color: #222;
 }
+
 .menu:hover, .menu:focus {
-    transform: translate3d(-130px, 0, 0);
-    animation-timing-function: 1s ease-in;
+    transform: translate(-130px);
 }
+
 .menu .title {
     top: 50%;
     position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
     transform: rotate(270deg);
     left: 10px;
     font-weight: 800;
     font-size: 15px;
 }
+
 .menu .nav {
     position: absolute;
     top: 50%;
@@ -43,10 +42,12 @@ body {
     transform: translateY(-50%);
     font-weight: 100;
 }
+
 .menu .nav li {
     padding-bottom: 30px;
     list-style-type: none;
 }
+
 .menu .nav li a {
     display: block;
     text-decoration: none;
@@ -54,9 +55,11 @@ body {
     transition: all 0.3s;
     -webkit-transition: all 0.3s;
 }
+
 .menu .nav li a:hover {
     color: #aaa;
 }
+
 .intro {
     position: absolute;
     top: 30%;
@@ -68,23 +71,36 @@ body {
     font-style: italic;
 }
 
-
-header 
-{
-    display:flex;
-    color: white;
-   justify-content: center;
- 
+.content{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 80px 1fr 80px;
 }
 
-content
-{
+.header {
+    background: linear-gradient(to bottom, #dfdfdf 75%, #efefef);
+    color: #222;
+    text-align: center;
+}
+
+.main {
     display: flex;
-    flex-direction: column;
 }
 
+.footer{
+    background: linear-gradient(to top, #dfdfdf 75%, #efefef);
+}
 
+.product{
+    width: 200px;
+    height: 200px;
+    background: #aaa;
+    border-radius: 10px;
+}
 
-
-
-
+.slider{
+    display: inline-flex;
+    background: khaki;
+    height: 200px;
+    flex-basis: 100%;
+}
