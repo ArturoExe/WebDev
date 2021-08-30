@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 body {
     background-color: #efefef;
     margin: 0;
@@ -123,5 +125,27 @@ margin: 10px;
     flex-basis: 100%;
 }
 
+.container {
+    display: flex;
+    background-color: rgb(39, 39, 38);
+    height: fit-content;
+    font-family: 'Poppins', sans-serif;   
+     color: rgb(203, 247, 247);
+    font-weight: bolder;
+    text-justify:auto;
 
+}
+
+.container__half {
+    flex: 1;
+    padding: 20px;
+
+}
+
+.container__half img {
+    
+    height: 600px;
+    object-fit: cover;
+    box-shadow: 10px 10px 5px -.5px rgb(160, 160, 160);
+}
 
